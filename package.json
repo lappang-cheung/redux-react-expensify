@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "start-serve": "node server/server.js",
-    "start": "concurrently --kill-others-on-fail \"yarn heroku-postbuild\" \"yarn start-serve\"",
+    "start": "concurrently --kill-others-on-fail \"yarn run heroku-postbuild\" \"yarn run start-serve\"",
     "heroku-postbuild": "yarn run build:prod",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
@@ -29,6 +29,7 @@
     "css-loader": "0.28.4",
     "express": "^4.16.3",
     "extract-text-webpack-plugin": "^3.0.2",
+    "firebase": "^4.12.1",
     "moment": "2.19.3",
     "node-sass": "4.8.3",
     "normalize.css": "7.0.0",
