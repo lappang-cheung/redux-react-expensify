@@ -11,6 +11,36 @@ const config = {
 
 firebase.initializeApp(config);
 
-firebase.database().ref().set({
-    name: "Leo"
-});
+const database = firebase.database();
+
+export { firebase, database as default };
+
+// database.ref('expenses').on('child_removed', (snapshot) => {
+//     console.log(snapshot.key, snapshot.val());
+// });
+
+// database.ref('expenses').on('child_changed', (snapshot) => {
+//     console.log(snapshot.key, snapshot.val());
+// });
+
+// database.ref('expenses').on('child_added', (snapshot) => {
+//     console.log(snapshot.key, snapshot.val());
+// });
+
+// database.ref('expenses').on('value', (snapshot) => {
+//     const expenses = [];
+//     snapshot.forEach((childSnapshot) => {
+//         expenses.push({
+//             id: childSnapshot.key,
+//             ...childSnapshot.val()
+//         })
+//     });
+//     console.log(expenses);
+// });
+
+// database.ref('expenses').push({
+//     description: 'Fun four',
+//     note: 'Note four',
+//     amount: 0,
+//     createdAt: 0
+// });
