@@ -10,8 +10,8 @@
   "license": "MIT",
   "scripts": {
     "start-serve": "node server/server.js",
-    "start": "node server/server.js",
-    "heroku-postbuild": "npm run build:prod",
+    "start": "concurrently --kill-others-on-fail \"yarn run heroku-postbuild\" \"yarn run start-serve\"",
+    "heroku-postbuild": "yarn run build:prod",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
