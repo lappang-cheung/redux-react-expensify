@@ -1,6 +1,8 @@
 # Redux-React-Expensify
 An expense application created using the following:
-* NodeJs, ReactJS, Redux, Heroku, Firebase, 0Auth, Sass, BEM, JEST
+Front-End: BEM, Sass, ReactJS, Redux, Babel, Webpack, MomentJs, React-Date(air-bnb)
+Back-End: NodeJS, Firebase, 0Auth, Heroku, ExpressJs
+Testing: Jest, Enemyze
 
 ## Table of Contents
 - [Application Run Through](#application-run-through)
