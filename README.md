@@ -1,29 +1,23 @@
 # Redux-React-Expensify
-
+An expense application created using the following:
+* NodeJs, ReactJS, Redux, Heroku, Firebase, 0Auth, Sass, BEM, JEST
 
 ## Table of Contents
 - [Application Run Through](#application-run-through)
 - [Application Design and Thought](#application-design-and-thought)
-- [Installation on Client and Server](#installation-on-client-and-server)
-- [Running both Client and Server](#running-both-client-and-server)
+- [Installation & Run on Client and Server](#installation-on-client-and-server)
+- [Demo Application](#demo-application)
 
 ## Application Run Through
 
-This application was created using Redux and ReactJS also will be hosted on GCloud. The purpose of this application was to learn the Redux and learn how to manipulate the data. 
+This application allowed users to create expenses and this would be authoized using 0Auth using their gmail accounts. Each expense is link to that specific individual user and would be stored in the backend using the Firebase database. These calls would used the API keys and firebase node packages in order to connect both client and server side.
+
+Credit - Andrew Mead - Instructor 
 
 ## Application Design and Thought
 
-Best practise was to design an expense application and learn to how to use Redux such as Store and Connect to manipulate the data. This would allow the users to add in the expenese and remove the expense while have the basic CRUD functionality.
+To really learn a redux and react was to create an application which can store data of the user provided. As an expense app, this allow a real world application where users can input real data and able be fetch back from the client-server side. Using {connect} from redux allowed the dispatches and stores to correctly push/get the data correctly. As well as using 0Auth to create the uid to create an user object to have their expenses stored correctly and only display the correct expenses only valid to them
 
-## Installation on Client and Server
+## Demo Application
 
-Need to install on client side and server side:
-
-* `install-client` is to install the node packages for clients.
-* `install-server` is to install the node packages for server.
-
-## Running both Client and Server
-
-Need to run the app for client side and server side:
-
-* `dev` is to install the node packages for clients.
+To view the demo please visit: https://expensifyreactredux.herokuapp.com.
